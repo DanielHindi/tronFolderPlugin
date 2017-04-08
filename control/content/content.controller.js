@@ -128,13 +128,6 @@
                     }
                     if (newObj.default) {
                         newObj = Utility.getDefaultScopeBlankData();
-                        if (tmpCarousalData) {
-                            editor.loadItems(tmpCarousalData);
-                            newObj.content.carouselImages = tmpCarousalData;
-                            tmpCarousalData = null;
-                        } else {
-                            editor.loadItems([]);
-                        }
 
                         $scope.data = newObj;
                     }

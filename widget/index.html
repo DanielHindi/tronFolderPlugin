@@ -95,7 +95,7 @@
 
 
 <div id="pluginsContainer">
-    <img src="./logo.png" />
+
 </div>
 
     <script>
@@ -146,7 +146,7 @@
 
             buildfire.navigation.navigateTo({
                 pluginId: p.pluginTypeId
-                ,folderName : p.pluginType.folderName
+                ,folderName : p.folderName || p.pluginType.folderName
                 ,instanceId : p.instanceId
                 ,title:p.title
             });
